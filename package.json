@@ -32,7 +32,9 @@
     "ci": "run-s build test"
   },
   "dependencies": {
-    "@47ng/chakra-next": "^2.1.1"
+    "@47ng/chakra-next": "^2.1.2",
+    "@chiffre/analytics-processing": "^1.0.0",
+    "@nivo/pie": "^0.61.1"
   },
   "devDependencies": {
     "@chakra-ui/core": "^0.7.0",
