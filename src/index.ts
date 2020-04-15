@@ -1,1 +1,1 @@
-export default (name: string) => `Hello, ${name} !`
+export { Logo } from './Logo'

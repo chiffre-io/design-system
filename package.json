@@ -1,7 +1,7 @@
 {
-  "name": "@chiffre/template-library",
+  "name": "@chiffre/design-system",
   "version": "0.0.0-semantically-released",
-  "description": "Template for Chiffre libraries",
+  "description": "Shared UI components for Chiffre",
   "main": "dist/index.js",
   "license": "MIT",
   "author": {
@@ -11,11 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chiffre-io/template-library"
+    "url": "https://github.com/chiffre-io/design-system"
   },
   "keywords": [
     "chiffre",
-    "template"
+    "design-system",
+    "react",
+    "chakra-ui",
+    "next.js"
   ],
   "publishConfig": {
     "access": "public"
@@ -28,15 +31,27 @@
     "build": "run-s build:clean build:ts",
     "ci": "run-s build test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@47ng/chakra-next": "^2.1.1"
+  },
   "devDependencies": {
+    "@chakra-ui/core": "^0.7.0",
     "@commitlint/config-conventional": "^8.3.4",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.2",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.11.1",
     "commitlint": "^8.3.5",
+    "emotion-theming": "^10.0.27",
     "husky": "^4.2.5",
     "jest": "^25.3.0",
+    "next": "^9.3.5",
     "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "ts-jest": "^25.3.1",
     "ts-node": "^8.8.2",
     "typescript": "^3.8.3"
@@ -44,7 +59,15 @@
   "jest": {
     "verbose": true,
     "preset": "ts-jest/presets/js-with-ts",
-    "testEnvironment": "node"
+    "testEnvironment": "jsdom",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@47ng/chakra-next)/)"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.test.json"
+      }
+    }
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -93,5 +116,14 @@
         true
       ]
     }
+  },
+  "peerDependencies": {
+    "@chakra-ui/core": "^0.7.0",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
+    "next": "^9.3.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
