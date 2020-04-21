@@ -3,9 +3,9 @@
 
 
 "@47ng/chakra-next@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@47ng/chakra-next/-/chakra-next-2.1.2.tgz#3175f1a09a71652a1b7fc3c2c1f2216f3c2a06e0"
-  integrity sha512-tHO8wGxkgOIMyIgk2QE4pfc/a7nHOJ+YckYwn+ofh9YQITm79hbaS1MLYkEx34DSoNMDmZcUMYfckOA5l9lg4w==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@47ng/chakra-next/-/chakra-next-2.2.0.tgz#17f40c687df188295d188d804ced10f83d6d06bd"
+  integrity sha512-saxbVToOQd9YeG/JIFG5vmb45agUnCftpLySGLVCBCW0DjJRKtzBgeSGAD1ct0532Hh6FJNbkOaA0/lTmggLVQ==
 
 "@ampproject/toolbox-core@^2.2.0", "@ampproject/toolbox-core@^2.3.0":
   version "2.3.0"
