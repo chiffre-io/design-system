@@ -7,3 +7,10 @@ yarn-error.log
 src/**
 coverage/
 .dependabot/
+.next/
+out/
+next-env.d.ts
+next.config.js
+tsconfig.*
+pages/
+test/

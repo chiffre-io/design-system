@@ -5,3 +5,5 @@ coverage/
 yarn-error.log
 # Docker containers with persistance
 .volumes/
+.next
+out/
