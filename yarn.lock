@@ -1883,6 +1883,13 @@
   dependencies:
     csstype "^2.6.9"
 
+"@types/styled-system__css@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.8.tgz#3886fc89e003aadda858349a5cf324fe54b09980"
+  integrity sha512-skv+daDje8vWQ8wnqVV0GCzgWVKx4gI9lJpAxWE77s52Ne6k/SCPP8HGE4BFbWDvK+qi5O3p89BGWVOQ1VHjMg==
+  dependencies:
+    csstype "^2.6.6"
+
 "@types/testing-library__dom@*", "@types/testing-library__dom@^7.0.0":
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/@types/testing-library__dom/-/testing-library__dom-7.0.1.tgz#426bef0aa306a603fe071859d4b485941b28aca6"
@@ -3490,7 +3497,7 @@ cssstyle@^2.0.0:
   dependencies:
     cssom "~0.3.6"
 
-csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.9:
+csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.6, csstype@^2.6.9:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
