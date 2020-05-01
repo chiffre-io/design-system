@@ -1,0 +1,103 @@
+import { NextPage } from 'next'
+import Head from 'next/head'
+import { Divider, Box, Stack } from '@chakra-ui/core'
+import { Card, StackContainer } from '@47ng/chakra-next'
+import {
+  AnimatedLogo,
+  Logo,
+  EmailField,
+  ErrorText,
+  FieldHelpText,
+  LabelWithAside,
+  InputField,
+  Label,
+  PasswordField,
+  TwoFactorTokenField
+} from '../src/index'
+import { Formik, Form, ErrorMessage } from 'formik'
+
+export default ({ children, ...props }) => (
+  <>
+    <Head>
+      <title>Chiffre.io - Design System</title>
+    </Head>
+    <StackContainer my={8} wide {...props}>
+      {children}
+    </StackContainer>
+  </>
+)
+
+<!----------------------------------------------------------------------------->
+
+## Logos
+
+Normal:
+
+<Logo h={8} />
+
+Animated:
+
+<AnimatedLogo h={8} speed={2} />
+
+<Divider />
+
+## Form Components
+
+<Card>
+  <Formik
+    initialValues={{
+      email: '',
+      input: '',
+      password: ''
+    }}
+    validate={() => {
+      return {
+        email: 'Email is invalid',
+        input: 'Foo bar',
+        password: 'Egg spam',
+        error: 'blop'
+      }
+    }}
+  >
+    {() => (
+      <Form>
+        <Stack spacing={4}>
+          <Box>
+            <LabelWithAside
+              htmlFor="email"
+              aside={() => (
+                <FieldHelpText id="email-help-text" fontSize="xs">
+                  You'll use your email address to log in
+                </FieldHelpText>
+              )}
+            >
+              Account
+            </LabelWithAside>
+            <EmailField name="email" />
+          </Box>
+          <Box>
+            <LabelWithAside
+              htmlFor="input"
+              aside={() => (
+                <FieldHelpText id="input-help-text" fontSize="xs">
+                  What shall we call you ?
+                </FieldHelpText>
+              )}
+            >
+              Display Name
+            </LabelWithAside>
+            <InputField
+              name="input"
+              aria-describedby="input-help-text"
+              placeholder="enter your name"
+              autoComplete="name"
+            />
+          </Box>
+          <Box>
+            <PasswordField name="password" />
+          </Box>
+        </Stack>
+      </Form>
+    )}
+  </Formik>
+</Card>
