@@ -6,14 +6,23 @@ import { ErrorText } from './ErrorText'
 
 export interface TwoFactorTokenFieldProps extends InputProps {
   name: string
+  autoFocus?: boolean
 }
 
 export const TwoFactorTokenField: React.FC<TwoFactorTokenFieldProps> = ({
   name,
+  autoFocus = false,
   ...props
 }) => {
   const theme = useTheme()
-  const [field] = useField(name)
+  const [{ onBlur, ...field }] = useField(name)
+  const ref = React.useRef<HTMLInputElement>()
+
+  React.useEffect(() => {
+    if (autoFocus && ref.current) {
+      ref.current.focus()
+    }
+  }, [])
   return (
     <>
       <Input
@@ -23,12 +32,14 @@ export const TwoFactorTokenField: React.FC<TwoFactorTokenFieldProps> = ({
         placeholder="123456"
         mb={1}
         size="lg"
+        maxW="9rem"
         inputMode="numeric" // Show numeric keyboard on mobile
         autoComplete="one-time-code"
         pattern="[0-9]{6}"
         textAlign="center"
-        fontSize="1.8rem"
+        fontSize="1.6rem"
         fontFamily={theme.fonts.mono}
+        ref={ref as any}
         {...field}
         {...props}
       />
