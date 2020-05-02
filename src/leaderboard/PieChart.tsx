@@ -1,5 +1,6 @@
 import React from 'react'
-import { defaultTheme as theme } from '@47ng/chakra-next'
+import { useTheme } from '@chakra-ui/core/dist/ThemeProvider'
+import { Theme } from '@47ng/chakra-next'
 import { ResponsivePie, PieDatum } from '@nivo/pie'
 
 export interface PieChartProps {
@@ -8,6 +9,7 @@ export interface PieChartProps {
 }
 
 export const PieChart: React.FC<PieChartProps> = ({ data, showPercent }) => {
+  const theme = useTheme() as Theme
   return (
     <ResponsivePie
       colors={[

@@ -2,7 +2,7 @@ import React from 'react'
 import Text from '@chakra-ui/core/dist/Text'
 import Flex from '@chakra-ui/core/dist/Flex'
 import Box from '@chakra-ui/core/dist/Box'
-import { defaultTheme as theme } from '@47ng/chakra-next'
+import { useTheme } from '@chakra-ui/core/dist/ThemeProvider'
 import { LeaderboardEntry } from '@chiffre/analytics-processing'
 import { PieDatum } from '@nivo/pie'
 import { LeaderboardEntryView } from './EntryView'
@@ -32,6 +32,7 @@ export const Leaderboard: React.FC<LeadeboardProps> = ({
   showPercentByDefault = false,
   pieData
 }) => {
+  const theme = useTheme()
   const [showPercent, setShowPercent] = React.useState(showPercentByDefault)
 
   const data = React.useMemo(() => {
