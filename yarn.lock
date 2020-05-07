@@ -1127,19 +1127,19 @@
     toasted-notes "3.2.0"
     use-dark-mode "2.3.1"
 
-"@chiffre/analytics-core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@chiffre/analytics-core/-/analytics-core-1.2.0.tgz#9d59ceacd1cc5437de39457d14b91c9f99f18480"
-  integrity sha512-DBDA6KVm8lmJQfRqnXNfawbJpALoBRheIO7iOybpUzU62kmlNsENNmUXOF/buIPkZL/Kymh9JoBKtrsSeCCbZw==
+"@chiffre/analytics-core@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@chiffre/analytics-core/-/analytics-core-2.0.0.tgz#5304079a069d5eeae9e21ed0e0a7ad6132291d0b"
+  integrity sha512-QKAKI+O305xc3FdqOXZahRPb4LbA4Hx7iN6WhjxvXKi67MrpaFjJWlF9gfeRTYsHxYBwGWfvT8iHUzjR4XW6nw==
   dependencies:
     nanoid "^3.0.2"
 
 "@chiffre/analytics-processing@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@chiffre/analytics-processing/-/analytics-processing-1.0.1.tgz#f3754b5635067e9d810abdc908bae922b9fc9379"
-  integrity sha512-Qxbm/JSL0LLA8q4HersadKbw3P/FZIAv+sknZhUuldaneP44kLxixXk0a2x2AeY9tQHLVvAoXhJmor9eXc8M3w==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@chiffre/analytics-processing/-/analytics-processing-1.0.2.tgz#5d47a06cfc83613e6addc7fa2f4bd70648a4b7d8"
+  integrity sha512-dslcABB2RTGXWCy8FKQUp8Yu78M6n1yCaUx0HEhau8Y1hgDtQF47ZwsmHTngyk9VYij2PGY3BR4KWbq9ucMonA==
   dependencies:
-    "@chiffre/analytics-core" "^1.2.0"
+    "@chiffre/analytics-core" "^2.0.0"
     bowser "^2.9.0"
 
 "@cnakazawa/watch@^1.0.3":
