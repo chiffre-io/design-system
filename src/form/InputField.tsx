@@ -11,7 +11,7 @@ export const InputField: React.FC<InputFieldProps> = ({ name, ...props }) => {
   const [{ onBlur: _, ...field }] = useField(name)
   return (
     <>
-      <Input id={name} name={name} type="text" mb={1} {...field} {...props} />
+      <Input id={name} type="text" mb={1} {...field} {...props} />
       <ErrorMessage name={name} component={ErrorText} />
     </>
   )

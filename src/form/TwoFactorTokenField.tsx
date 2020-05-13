@@ -27,7 +27,6 @@ export const TwoFactorTokenField: React.FC<TwoFactorTokenFieldProps> = ({
     <>
       <Input
         id={name}
-        name={name}
         type="text"
         placeholder="123456"
         mb={1}

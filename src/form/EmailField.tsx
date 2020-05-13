@@ -55,7 +55,6 @@ export const EmailField: React.FC<EmailFieldProps> = ({
         />
         <Input
           id={name}
-          name={name}
           type="email"
           placeholder="email address"
           mb={1}
