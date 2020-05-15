@@ -2006,9 +2006,9 @@
     csstype "^2.6.9"
 
 "@types/styled-system__css@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.8.tgz#3886fc89e003aadda858349a5cf324fe54b09980"
-  integrity sha512-skv+daDje8vWQ8wnqVV0GCzgWVKx4gI9lJpAxWE77s52Ne6k/SCPP8HGE4BFbWDvK+qi5O3p89BGWVOQ1VHjMg==
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.9.tgz#7eeafd4fbcf7c8ee8f965d58ba4ac630319d9d89"
+  integrity sha512-WVEgF4B1knv4XQAQtqgmYnLeU3rwEFFEsHZE/oGUAsqzl/snq41Kwm5Fcto0+UVKDNSiL2HNPEUpHb2AKa4JgQ==
   dependencies:
     csstype "^2.6.6"
 
