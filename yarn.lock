@@ -2002,9 +2002,9 @@
     csstype "^2.6.9"
 
 "@types/styled-system__css@^5.0.8":
-  version "5.0.10"
-  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.10.tgz#65950139654a6ded536af5fbf648186566cc3799"
-  integrity sha512-wXh3x3Uap56now2qlsa/3L7AaVVedkkNZOBor+5U6BuF3ihiXFlwdTaW05divMn2MS3Ms6lBLC1X007LwQKK/Q==
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.11.tgz#a9ff7e5d75e69a0d5ccff36acb4bbd491f1a9da9"
+  integrity sha512-hUieAt4sFS7zwbdU9Vlnn/c3vkfhTMhyiccYGpUSX96nJ4BF3NjLIjMu3cQOYS5EX4gPkHJZhkfdw41ov1NjhQ==
   dependencies:
     csstype "^2.6.6"
 
