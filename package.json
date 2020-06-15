@@ -35,7 +35,7 @@
   "dependencies": {
     "@47ng/chakra-next": "^2.2.0",
     "@chiffre/analytics-processing": "^1.0.1",
-    "@nivo/pie": "^0.61.1"
+    "@nivo/pie": "^0.62.0"
   },
   "devDependencies": {
     "@chakra-ui/core": "^0.7.0",
